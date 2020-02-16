@@ -1,0 +1,40 @@
+{
+  "name": "string_to_int",
+  "version": "1.0.0",
+  "description": "compare how to transform from string to int",
+  "main": "index.mjs",
+  "type": "module",
+  "engines": {
+    "node": "v8.17.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^25.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gucchisk/node-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gucchisk/node-samples/issues"
+  },
+  "homepage": "https://github.com/gucchisk/node-samples#readme",
+  "jest": {
+    "verbose": true,
+    "testMatch": [
+      "**/__tests__/**/*.?(m)js?(x)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "mjs"
+    ],
+    "transform": {
+      "^.+\\.(js|mjs)$": "babel-jest"
+    }
+  }
+}
