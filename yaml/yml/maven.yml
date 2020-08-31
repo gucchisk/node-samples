@@ -1,0 +1,17 @@
+type: maven
+files:
+  - path: xml/pom.xml
+    type: xml
+    xpathes:
+      - namespaces:
+          pom: http://maven.yapache.org/POM/4.0.0
+        path: /pom:project/pom:version
+      - path: /project/version
+    # queries:
+    #   - .project.version
+          
+        
+              
+          
+          
+  

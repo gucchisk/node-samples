@@ -1,0 +1,6 @@
+type: npm
+files:
+  - path: json/package.json
+    type: json
+    queries:
+      - .version
