@@ -1,6 +1,6 @@
 const xpath = require('xpath')
-const parser = require('xmldom').DOMParser
-const serializer = require('xmldom').XMLSerializer
+const parser = require('@xmldom/xmldom').DOMParser
+const serializer = require('@xmldom/xmldom').XMLSerializer
 const fs = require('fs')
 
 const xml = fs.readFileSync('xml/pom.xml').toString()
