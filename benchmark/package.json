@@ -1,0 +1,17 @@
+{
+  "name": "benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bench:matcha": "matcha matcha.js",
+    "bench:thi.ng": "node bench.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@thi.ng/bench": "^3.0.8",
+    "matcha": "^0.7.0"
+  },
+  "type": "module"
+}
