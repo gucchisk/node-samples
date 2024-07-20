@@ -3,7 +3,11 @@ const morgan = require('morgan')
 const app = express()
 const port = 3000
 
-app.use(morgan('combined'))
+morgan.token('remote-port', (req, res) => {
+  return req.socket.remotePort
+})
+
+app.use(morgan(':method :url :remote-addr :remote-port'))
 
 app.get('/', (req, res) => {
   const sock = req.socket
